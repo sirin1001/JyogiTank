@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    [SerializeField] Bullet bullet;
+    [SerializeField] GameObject bullet;
     void Update()
     {
         if (Input.GetKeyDown("space"))
