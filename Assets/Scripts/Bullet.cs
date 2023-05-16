@@ -20,6 +20,8 @@ public class Bullet : MonoBehaviour
             
             collision.gameObject.GetComponent<Status>().HP--;
             Debug.Log(collision.gameObject.GetComponent<Status>().HP);
+
+            GameObject.Find("HPBar").GetComponent<HpBar>().UpdateHPValue();
         }
 
         Destroy(this.gameObject);
